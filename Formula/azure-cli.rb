@@ -26,12 +26,12 @@ class AzureCli < Formula
   end
 
 # `pkgconf`, `rust`, and `openssl@3` are for cryptography.
-  depends_on "ds-pkgconf" => :build
-  depends_on "ds-rust" => :build
-  depends_on "ds-libsodium"
-  depends_on "ds-libyaml"
-  depends_on "ds-openssl@3"
-  depends_on "ds-python@3.13"
+  depends_on "itdss-warsaw/homebrew-core/ds-pkgconf" => :build
+  depends_on "itdss-warsaw/homebrew-core/ds-rust" => :build
+  depends_on "itdss-warsaw/homebrew-core/ds-libsodium"
+  depends_on "itdss-warsaw/homebrew-core/ds-libyaml"
+  depends_on "itdss-warsaw/homebrew-core/ds-openssl@3"
+  depends_on "itdss-warsaw/homebrew-core/ds-python@3.13"
 
   uses_from_macos "libffi"
 
