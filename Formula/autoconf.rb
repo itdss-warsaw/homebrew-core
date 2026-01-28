@@ -27,7 +27,7 @@ class Autoconf < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux:   "55e5cfc7d6f3d91895fe5a345b2158498f8e96b05574b073edf667de4122413d"
   end
 
-  depends_on "m4"
+  depends_on "itdss-warsaw/homebrew-core/m4"
   uses_from_macos "perl"
 
   def install
