@@ -19,7 +19,7 @@ class Automake < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux:  "c5bc18b0f438a2b7776c8a2cec9f9c5a4189a46dd35b79046249ad9d3abd4da1"
   end
 
-  depends_on "autoconf"
+  depends_on "itdss-warsaw/homebrew-core/autoconf"
 
   def install
     ENV["PERL"] = "/usr/bin/perl" if OS.mac?
