@@ -18,8 +18,8 @@ class Awscli < Formula
   end
 
   depends_on "cmake" => :build
-  depends_on "openssl@3"
-  depends_on "python@3.13" # Python 3.14 issue: https://github.com/aws/aws-cli/issues/9914
+  depends_on "itdss-warsaw/homebrew-core/openssl@3"
+  depends_on "itdss-warsaw/homebrew-core/python@3.13" # Python 3.14 issue: https://github.com/aws/aws-cli/issues/9914
 
   uses_from_macos "libffi"
   uses_from_macos "mandoc"
