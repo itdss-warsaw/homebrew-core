@@ -29,7 +29,7 @@ class Sqlite < Formula
 
   keg_only :provided_by_macos
 
-  depends_on "readline"
+  depends_on "itdss-warsaw/homebrew-core/readline"
 
   uses_from_macos "zlib"
 
