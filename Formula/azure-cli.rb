@@ -25,13 +25,13 @@ class AzureCli < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux:  "b062ae508236032809c657d3fed5ed8c181fb7c3b02a23f1529eba2b47988423"
   end
 
-  # `pkgconf`, `rust`, and `openssl@3` are for cryptography.
+# `pkgconf`, `rust`, and `openssl@3` are for cryptography.
   depends_on "pkgconf" => :build
   depends_on "rust" => :build
-  depends_on "itdss-warsaw/Formula/ds-libsodium"
-  depends_on "itdss-warsaw/Formula/ds-libyaml"
-  depends_on "itdss-warsaw/Formula/ds-openssl@3.rb"
-  depends_on "itdss-warsaw/Formula/ds-python@3.13"
+  depends_on "libsodium"
+  depends_on "libyaml"
+  depends_on "openssl@3"
+  depends_on "python@3.13"
 
   uses_from_macos "libffi"
 
