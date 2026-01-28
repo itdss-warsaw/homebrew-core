@@ -17,9 +17,9 @@ class Awscli < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux:  "cb0a5ff7c0f4e7304e7e7f042c89ba0d753d1f9c123e12195ba321c11022ec48"
   end
 
-  depends_on "cmake" => :build
-  depends_on "openssl@3"
-  depends_on "python@3.13" # Python 3.14 issue: https://github.com/aws/aws-cli/issues/9914
+  depends_on "itdss-warsaw/homebrew-core/cmake" => :build
+  depends_on "itdss-warsaw/homebrew-core/openssl@3"
+  depends_on "itdss-warsaw/homebrew-core/python@3.13" # Python 3.14 issue: https://github.com/aws/aws-cli/issues/9914
 
   uses_from_macos "libffi"
   uses_from_macos "mandoc"
