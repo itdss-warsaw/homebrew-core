@@ -22,7 +22,7 @@ class OpensslAT3 < Formula
     sha256 x86_64_linux:  "dae10cea048eae154365f18fc51154093f8ba378ace3fe138f89dda08bf09e4e"
   end
 
-  depends_on "ca-certificates"
+  depends_on "itdss-warsaw/homebrew-core/ca-certificates"
 
   on_linux do
     resource "Test::Harness" do
