@@ -31,12 +31,12 @@ class Rust < Formula
     end
   end
 
-  depends_on "libgit2"
-  depends_on "libssh2"
-  depends_on "llvm"
-  depends_on "openssl@3"
-  depends_on "pkgconf"
-  depends_on "zstd"
+  depends_on "itdss-warsaw/homebrew-core/libgit2"
+  depends_on "itdss-warsaw/homebrew-core/libssh2"
+  depends_on "itdss-warsaw/homebrew-core/llvm"
+  depends_on "itdss-warsaw/homebrew-core/openssl@3"
+  depends_on "itdss-warsaw/homebrew-core/pkgconf"
+  depends_on "itdss-warsaw/homebrew-core/zstd"
 
   uses_from_macos "python" => :build
   uses_from_macos "curl"
