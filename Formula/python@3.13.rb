@@ -22,11 +22,11 @@ class PythonAT313 < Formula
     sha256 x86_64_linux:  "bc988c27b8d794b3449a65cac78c12c53ac13689edc06649b0ad46f447406ffa"
   end
 
-  depends_on "pkgconf" => :build
-  depends_on "mpdecimal"
-  depends_on "openssl@3"
-  depends_on "sqlite"
-  depends_on "xz"
+  depends_on "itdss-warsaw/homebrew-core/pkgconf" => :build
+  depends_on "itdss-warsaw/homebrew-core/mpdecimal"
+  depends_on "itdss-warsaw/homebrew-core/openssl@3"
+  depends_on "itdss-warsaw/homebrew-core/sqlite"
+  depends_on "itdss-warsaw/homebrew-core/xz"
 
   uses_from_macos "bzip2"
   uses_from_macos "expat", since: :sequoia
