@@ -28,9 +28,9 @@ class Pkgconf < Formula
   head do
     url "https://github.com/pkgconf/pkgconf.git", branch: "master"
 
-    depends_on "autoconf" => :build
-    depends_on "automake" => :build
-    depends_on "libtool" => :build
+    depends_on "itdss-warsaw/homebrew-core/autoconf" => :build
+    depends_on "itdss-warsaw/homebrew-core/automake" => :build
+    depends_on "itdss-warsaw/homebrew-core/libtool" => :build
   end
 
   def install
